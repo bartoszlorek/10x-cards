@@ -1,94 +1,82 @@
 # 10x Astro Starter
 
-A modern, opinionated starter template for building fast, accessible, and AI-friendly web applications.
+## Project Description
+
+10x Astro Starter is a comprehensive boilerplate project designed to help you quickly build fast, efficient, and scalable web applications. It leverages Astro 5 for high-performance static site generation combined with React 19 for interactive components. Built with TypeScript 5 and styled using Tailwind CSS 4 along with accessible components from Shadcn/ui, this starter kit incorporates modern best practices for both frontend and backend development.
 
 ## Tech Stack
 
-- [Astro](https://astro.build/) v5.5.5 - Modern web framework for building fast, content-focused websites
-- [React](https://react.dev/) v19.0.0 - UI library for building interactive components
-- [TypeScript](https://www.typescriptlang.org/) v5 - Type-safe JavaScript
-- [Tailwind CSS](https://tailwindcss.com/) v4.0.17 - Utility-first CSS framework
+- **Frontend:**
 
-## Prerequisites
+  - Astro 5 – Fast, minimal JavaScript static site generation
+  - React 19 – For building interactive UIs
+  - TypeScript 5 – Ensured type safety and improved developer experience
+  - Tailwind CSS 4 – Utility-first styling for rapid UI development
+  - Shadcn/ui – Accessible and customizable React components
 
-- Node.js v22.14.0 (as specified in `.nvmrc`)
-- npm (comes with Node.js)
+- **Backend:**
 
-## Getting Started
+  - Supabase – A complete backend solution with PostgreSQL as the database
+
+- **AI Integration:**
+
+  - Openrouter.ai – Access to various models (OpenAI, Anthropic, Google, etc.) with cost control mechanisms
+
+- **CI/CD & Hosting:**
+  - GitHub Actions – For continuous integration and deployment pipelines
+  - DigitalOcean – Hosting platform using Docker images
+
+## Getting Started Locally
+
+### Prerequisites
+
+- Node.js version specified in the `.nvmrc` (currently v22.14.0).
+- A Git client to clone the repository.
+
+### Installation
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/przeprogramowani/10x-astro-starter.git
-cd 10x-astro-starter
-```
+   ```bash
+   git clone <repository-url>
+   cd 10x-cards
+   ```
 
 2. Install dependencies:
 
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
-3. Run the development server:
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-```bash
-npm run dev
-```
-
-4. Build for production:
-
-```bash
-npm run build
-```
+Visit `http://localhost:3000` (or the port indicated in the terminal) to see the application in action.
 
 ## Available Scripts
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
-- `npm run lint:fix` - Fix ESLint issues
+Within the project directory, you can run:
 
-## Project Structure
+- `npm run dev` – Starts the Astro development server.
+- `npm run build` – Builds the project for production.
+- `npm run preview` – Serves the production build locally.
+- `npm run astro` – Access Astro CLI commands.
+- `npm run lint` – Runs ESLint to analyze code quality.
+- `npm run lint:fix` – Automatically fixes linting errors.
+- `npm run format` – Formats the code using Prettier.
 
-```md
-.
-├── src/
-│   ├── layouts/    # Astro layouts
-│   ├── pages/      # Astro pages
-│   │   └── api/    # API endpoints
-│   ├── components/ # UI components (Astro & React)
-│   └── assets/     # Static assets
-├── public/         # Public assets
-```
+## Project Scope
 
-## AI Development Support
+This project serves as a robust starting point for developing production-ready web applications. It incorporates modern best practices, a clean and scalable architecture, and essential tools and libraries to facilitate smooth development workflows. Refer to the [Product Requirements Document](./prd.md) for comprehensive details on project requirements and scope.
 
-This project is configured with AI development tools to enhance the development experience, providing guidelines for:
+## Project Status
 
-- Project structure
-- Coding practices
-- Frontend development
-- Styling with Tailwind
-- Accessibility best practices
-- Astro and React guidelines
+Version: 0.0.1
 
-### Cursor IDE
-
-The project includes AI rules in `.cursor/rules/` directory that help Cursor IDE understand the project structure and provide better code suggestions.
-
-### GitHub Copilot
-
-AI instructions for GitHub Copilot are available in `.github/copilot-instructions.md`
-
-### Windsurf
-
-The `.windsurfrules` file contains AI configuration for Windsurf.
-
-## Contributing
-
-Please follow the AI guidelines and coding practices defined in the AI configuration files when contributing to this project.
+This project is in its early stages and is actively maintained. Contributions, bug reports, and feature requests are welcome.
 
 ## License
 
-MIT
+This project is licensed under the MIT License.
