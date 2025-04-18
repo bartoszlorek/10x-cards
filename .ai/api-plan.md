@@ -206,7 +206,7 @@
          "created_at": "ISO8601 timestamp",
          "updated_at": "ISO8601 timestamp"
        },
-       "flashcardsProposals": [
+       "flashcards_proposals": [
          { "front": "Question from AI", "back": "Answer from AI", "source": "ai-full" }
          // ... additional flashcards ...
        ]

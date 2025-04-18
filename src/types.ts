@@ -70,7 +70,7 @@ export type FlashcardProposalDTO = Pick<FlashcardCreateCommand, "front" | "back"
  */
 export interface GenerationResponseDTO {
   generation: GenerationDTO;
-  flashcardsProposals: FlashcardProposalDTO[];
+  flashcards_proposals: FlashcardProposalDTO[];
 }
 
 /**
