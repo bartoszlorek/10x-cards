@@ -62,7 +62,9 @@ export interface GenerateFlashcardsCommand {
  * FlashcardProposalDTO is used for proposals returned by the generation endpoint.
  * It includes only the essential fields for a flashcard proposal.
  */
-export type FlashcardProposalDTO = Pick<FlashcardCreateCommand, "front" | "back" | "source">;
+export type FlashcardProposalDTO = Pick<FlashcardCreateCommand, "front" | "back" | "source"> & {
+  isAccepted?: boolean;
+};
 
 /**
  * GenerationResponseDTO is the response payload for the generation endpoint,
